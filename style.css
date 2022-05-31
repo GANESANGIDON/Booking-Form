@@ -93,7 +93,7 @@ body {
   cursor: pointer;
 }
 
-#country-codes  option:checked{
+#country-codes option:checked {
   color: white;
   background-color: rgba(35, 92, 248, 0.952);
 }
@@ -192,7 +192,7 @@ body {
 }
 
 /* --------------------------------------------------- */
-/* laptop and large devices */
+/* small laptop devices */
 @media (min-width: 768px) {
   :root {
     font-size: 15px;
@@ -201,5 +201,69 @@ body {
   .form-container {
     width: 600px;
     padding: 30px;
+  }
+
+  #main-form {
+    gap: 20px;
+  }
+
+  .domain-lbl {
+    padding: 4px 12px;
+  }
+
+  #submit-btn {
+    padding: 8px 0px;
+  }
+}
+
+/* --------------------------------------------------- */
+/* large laptop devices */
+@media (min-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+
+  .form-container {
+    width: 650px;
+    padding: 30px;
+  }
+
+  .form-header {
+    margin-bottom: 20px;
+  }
+
+  #main-form {
+    gap: 25px;
+  }
+
+  #submit-btn {
+    padding: 10px 0px;
+  }
+}
+
+/* --------------------------------------------------- */
+/* extra large devices */
+@media (min-width: 1441px) {
+  :root {
+    font-size: 22px;
+  }
+
+  .form-container {
+    width: 800px;
+    padding: 40px;
+  }
+
+  .form-header {
+    margin-bottom: 25px;
+  }
+
+  #ph-num,
+  #mail-id,
+  #country-codes {
+    padding: 6px 15px;
+  }
+
+  .domain-lbl {
+    padding: 5px 15px;
   }
 }
