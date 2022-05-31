@@ -93,6 +93,11 @@ body {
   cursor: pointer;
 }
 
+#country-codes  option:checked{
+  color: white;
+  background-color: rgba(35, 92, 248, 0.952);
+}
+
 /* domain-container Starts */
 .domain-container {
   display: flex;
