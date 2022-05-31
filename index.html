@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session Booking</title>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom External Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Form Container Starts -->
+    <div class="form-container">
+      <!-- form Header Starts -->
+      <div class="form-header">
+        <h2 class="form-header-heading">Company</h2>
+        <h4 class="form-header-subheading">Book Your Free Demo Session</h4>
+        <p class="form-header-para">Limited Spots Left!</p>
+      </div>
+      <!-- form Header Ends -->
+
+      <!-- form Starts -->
+      <form id="main-form">
+        <!-- mail-id container Starts -->
+        <div class="mail-id-container">
+          <input
+            type="email"
+            name="mailId"
+            id="mail-id"
+            placeholder="Your Email Address"
+          />
+        </div>
+        <!-- mail-id container Ends -->
+
+        <!-- mobile number container Starts -->
+        <div class="mobileNumber-container">
+          <select name="countryCodes" id="country-codes">
+            <option value="+91" selected>+91</option>
+          </select>
+          <input
+            type="number"
+            name="phNumber"
+            id="ph-num"
+            placeholder="Your Mobile Number"
+          />
+        </div>
+        <!-- mobile number container Ends -->
+
+        <!-- domain Starts -->
+        <div class="domain-container">
+          <!-- Domain heading -->
+          <p class="domain-heading">Select Your domain</p>
+
+          <!-- domain division Starts -->
+          <div class="domain-division">
+            <!-- Mechanical -->
+            <div class="domain-div">
+              <input
+                type="radio"
+                id="mechanical"
+                name="domain"
+                class="domain-input"
+                checked
+              />
+              <label for="mechanical" class="domain-lbl">Mechanical</label>
+            </div>
+            <!-- Electrical -->
+            <div class="domain-div">
+              <input
+                type="radio"
+                id="electrical"
+                name="domain"
+                class="domain-input"
+              />
+              <label for="electrical" class="domain-lbl">Electrical</label>
+            </div>
+            <!-- Civil -->
+            <div class="domain-div">
+              <input
+                type="radio"
+                id="civil"
+                name="domain"
+                class="domain-input"
+              />
+              <label for="civil" class="domain-lbl">Civil</label>
+            </div>
+            <!-- CSE -->
+            <div class="domain-div">
+              <input type="radio" id="cse" name="domain" class="domain-input" />
+              <label for="cse" class="domain-lbl">CSE</label>
+            </div>
+            <!-- Others -->
+            <div class="domain-div">
+              <input
+                type="radio"
+                id="others"
+                name="domain"
+                class="domain-input"
+              />
+              <label for="others" class="domain-lbl">Others</label>
+            </div>
+          </div>
+          <!-- domain division Ends -->
+        </div>
+        <!-- domain Ends -->
+
+        <!-- submit button -->
+        <button type="submit" id="submit-btn">
+          Schedule Career Counselling Session
+        </button>
+      </form>
+      <!-- form Ends -->
+
+      <!-- form footer Starts -->
+      <div class="form-footer">
+        By registering here, I agree to Company
+        <a href="#" class="links">Terms & Conditions</a> and
+        <a href="#" class="links">Privacy Policy</a>
+      </div>
+      <!-- privacy policy Ends -->
+    </div>
+    <!-- Form container Ends -->
+
+    <!-- External JavaScript link -->
+    <script src="./script.js"></script>
+  </body>
+</html>
